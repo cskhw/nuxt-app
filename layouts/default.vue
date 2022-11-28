@@ -9,7 +9,7 @@
   <div>footer</div>
 </template>
 <script setup lang="ts"></script>
-<style lang="scss">
+<style lang="scss" scoped>
 nav {
   & > a {
     text-decoration: none;

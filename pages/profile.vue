@@ -8,12 +8,5 @@
 </template>
 <script setup lang="ts"></script>
 <style lang="scss" scoped>
-.profile {
-  .profile-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: gray;
-  }
-}
+@import "@/assets/stylesheets/pages/profile";
 </style>

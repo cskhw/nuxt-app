@@ -1,7 +1,7 @@
 <template>
   <div class="posts">
     <h1>Posts Page</h1>
-    <template v-for="post of appStore.posts">
+    <template v-for="post of postStore.posts">
       <div class="post" @click="$router.push(`/posts/${post.id}`)">
         <h3>{{ post.id }}</h3>
         <h3>{{ post.title }}</h3>
@@ -10,9 +10,9 @@
   </div>
 </template>
 <script setup lang="ts">
-import useAppStore from "@/stores/useAppStore";
+import usePostStore from "@/stores/usePostStore";
 
-const appStore = useAppStore();
+const postStore = usePostStore();
 </script>
 <style lang="scss" scoped>
 .post {

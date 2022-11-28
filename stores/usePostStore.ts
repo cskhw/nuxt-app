@@ -1,6 +1,6 @@
-import type { Post } from "@/types/stores/appStore";
+import type { Post } from "@/types/stores/postStore";
 
-export default defineStore("app", {
+export default defineStore("post", {
   state: () => ({
     posts: [
       {
